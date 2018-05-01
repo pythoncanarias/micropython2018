@@ -1,0 +1,132 @@
+.sections {
+  margin-top: 80px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  .container {
+    margin-top: 30px;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: 40px;
+    color: $primary;
+    position: relative;
+    margin-bottom: 40px;
+
+    &:after {
+      transform: rotateZ(90deg);
+      height: 4px;
+      width: 60px;
+      position: absolute;
+      margin-bottom: 2px;
+      background-color: $secondary;
+      left: -35px;
+      bottom: 18px;
+      content: " ";
+    }
+  }
+
+  p {
+    color: $text-secondary;
+    font-size: 20px;
+
+    line-height: 1.6;
+  }
+}
+
+
+.event {
+  .logo_text {
+    display: block;
+    margin: 0 auto;
+    margin-top: 35px;
+    max-height: 100px;
+  }
+}
+
+.speakers {
+  margin-bottom: 25px;
+  .speaker {
+    text-align: center;
+    margin-bottom: 35px;
+    .photo {
+      height: 120px;
+      width: 120px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+    .name {
+      color: $primary;
+
+      font-size: 20px;
+    }
+    .position {
+      color: $secondary;
+      font-weight: bold;
+    }
+  }
+}
+
+.schedule {
+  background-color: $primary;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  h2 {
+    color: $text-primary;
+    margin-bottom: 20px;
+  }
+
+  .track {
+    color: $text-primary;
+    font-size: 16px;
+
+    .title {
+      font-size: 22px;
+      margin-bottom: 25px;
+      border-bottom: 1px solid $text-primary;
+      padding-bottom: 5px;
+    }
+    .talks {
+      .talk {
+        margin-bottom: 20px;
+        .talk-title {
+          font-size: 18px;
+          font-weight: 500;
+        }
+        .talk-speaker {
+          margin-top: -6px;
+          font-size: 15px;
+        }
+        .talk-time {
+          margin-top: -4px;
+          color: $secondary;
+        }
+      }
+    }
+  }
+}
+
+.sponsors {
+  .sponsor {
+    margin-top: 20px;
+  }
+
+  p:not(:first-of-type) {
+    margin-top: 35px;
+  }
+  margin-bottom: 35px;
+}
+
+.location {
+  .map {}
+  .indications {
+    margin-top: 80px;
+  }
+}
+
+.tickets {}

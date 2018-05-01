@@ -82,13 +82,6 @@
     left: 0;
     z-index: -1; }
 
-.sections {
-  margin-top: 80px;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%; }
-
 .navbar {
   -moz-animation: fadeIn 1s;
   -webkit-animation: fadeIn 1s;
@@ -114,6 +107,97 @@
       font-weight: 500; }
       .navbar form .btn-outline-warning:hover {
         color: #353d4f; }
+
+.sections {
+  margin-top: 80px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%; }
+  .sections .container {
+    margin-top: 30px; }
+  .sections h2 {
+    font-weight: bold;
+    font-size: 40px;
+    color: #353d4f;
+    position: relative;
+    margin-bottom: 40px; }
+    .sections h2:after {
+      transform: rotateZ(90deg);
+      height: 4px;
+      width: 60px;
+      position: absolute;
+      margin-bottom: 2px;
+      background-color: #e6b33d;
+      left: -35px;
+      bottom: 18px;
+      content: " "; }
+  .sections p {
+    color: #a5a7ab;
+    font-size: 20px;
+    line-height: 1.6; }
+
+.event .logo_text {
+  display: block;
+  margin: 0 auto;
+  margin-top: 35px;
+  max-height: 100px; }
+
+.speakers {
+  margin-bottom: 25px; }
+  .speakers .speaker {
+    text-align: center;
+    margin-bottom: 35px; }
+    .speakers .speaker .photo {
+      height: 120px;
+      width: 120px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 10px; }
+    .speakers .speaker .name {
+      color: #353d4f;
+      font-size: 20px; }
+    .speakers .speaker .position {
+      color: #e6b33d;
+      font-weight: bold; }
+
+.schedule {
+  background-color: #353d4f;
+  padding-top: 20px;
+  padding-bottom: 25px; }
+  .schedule h2 {
+    color: #fff;
+    margin-bottom: 20px; }
+  .schedule .track {
+    color: #fff;
+    font-size: 16px; }
+    .schedule .track .title {
+      font-size: 22px;
+      margin-bottom: 25px;
+      border-bottom: 1px solid #fff;
+      padding-bottom: 5px; }
+    .schedule .track .talks .talk {
+      margin-bottom: 20px; }
+      .schedule .track .talks .talk .talk-title {
+        font-size: 18px;
+        font-weight: 500; }
+      .schedule .track .talks .talk .talk-speaker {
+        margin-top: -6px;
+        font-size: 15px; }
+      .schedule .track .talks .talk .talk-time {
+        margin-top: -4px;
+        color: #e6b33d; }
+
+.sponsors {
+  margin-bottom: 35px; }
+  .sponsors .sponsor {
+    margin-top: 20px; }
+  .sponsors p:not(:first-of-type) {
+    margin-top: 35px; }
+
+.location .indications {
+  margin-top: 80px; }
 
 body, html {
   width: 100%;
