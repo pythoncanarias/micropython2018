@@ -1,0 +1,32 @@
+.navbar {
+  @include fadeIn( 1s );
+  margin-top: 40px;
+  z-index: 10;
+
+  .nav-link {
+    color: rgba(255, 255, 255, 0.75) !important;
+    font-weight: 400;
+    margin-left: 8px;
+    margin-right: 8px;
+
+    &:hover {
+      color: $secondary !important;
+    }
+  }
+
+  form {
+    margin-left: 20px;
+
+    .btn-outline-warning {
+      color: $secondary;
+      border-color: $secondary;
+
+      padding-left: 35px;
+      padding-right: 35px;
+      font-weight: 500;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}

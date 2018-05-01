@@ -1,0 +1,45 @@
+{
+  "name": "PyDayTF2018",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack.dev.config.js --inline --hot --progress --colors",
+    "build": "webpack --config ./webpack.prod.config.js --progress --colors",
+    "watch": "webpack-dev-server --watch --config ./webpack.dev.config.js --inline --hot --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "Raul Marrero (https://github.com/Rulox/)",
+  "license": "",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "autoprefixer": "^7.2.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-eslint": "^8.0.3",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^2.24.1",
+    "node-sass": "^4.7.2",
+    "node-sass-glob-importer": "^5.0.0-alpha.15",
+    "postcss-loader": "^2.0.6",
+    "resolve-url-loader": "^2.3.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "uglifyjs-webpack-plugin": "^1.0.1",
+    "url-loader": "^1.0.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.5",
+    "webpack-merge": "^4.1.1"
+  }
+}
