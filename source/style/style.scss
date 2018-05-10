@@ -1,8 +1,10 @@
 @import "_variables.scss";
+@import "_breakpoints.scss";
 @import "_animations.scss";
 @import "_hero.scss";
 @import "_navbar.scss";
 @import "_sections.scss";
+@import "_footer.scss";
 body, html {
   width: 100%;
   min-height: 100%;

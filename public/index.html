@@ -10,10 +10,20 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <!--<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>-->
+
   <link rel="stylesheet" href="css/style.css">
 <body>
 
 <div class="hero">
+  <!--
+  <div class="carousel">
+    <img class="slide" src="images/hero_bg_1.jpg">
+    <img class="slide" src="images/hero_bg_2.jpg">
+    <img class="slide" src="images/hero_bg_3.jpg">
+    <img class="slide" src="images/hero_bg_4.jpg">
+  </div>
+
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,6 +35,8 @@
         <li class="nav-item">
           <a class="nav-link" href="#">El Evento</a>
         </li>
+
+
         <li class="nav-item">
           <a class="nav-link" href="#">Ponentes</a>
         </li>
@@ -38,24 +50,30 @@
           <a class="nav-link" href="#">Cómo Llegar</a>
         </li>
       </ul>
+
       <form class="form-inline my-2 my-lg-0">
-        <a href="#" class="btn btn-outline-warning my-2 my-sm-0 " >Tickets</a>
+        <a href="#" class="btn btn-outline-warning disabled my-2 my-sm-0 " >Tickets (próximamente)</a>
       </form>
     </div>
     </div>
-  </nav>
+  </nav>-->
 
 
   <div class="hero content">
     <div class="text">
-    <span class="slogan">CHARLAS Y TALLERES DE PYTHON </span>
-    <h1>PyDay TF 2018</h1>
-    <div class="sub">
-      <i class="far fa-calendar-alt"></i> 17 de Noviembre de 2018
+      <span class="slogan">CHARLAS Y TALLERES DE PYTHON </span>
+      <h1>PyDay TF 2018</h1>
+      <div class="sub">
+        <i class="far fa-calendar-alt"></i> 17 de Noviembre de 2018
+        <!--<i class="fas fa-map-marker-alt"></i> TBD  -->
+      </div>
 
-      <i class="fas fa-map-marker-alt"></i> Facultad de Física ULL, Tenerife
+      <div class="cfp">
+        Abiertas las solicitudes para el "Call for Papers" ¡Anímate a dar una charla! <br><br>
+        <a href="//pyday.pythoncanarias.es/cfp" target="_blank" class="btn btn-outline-warning btn-cfp my-2 my-sm-0 " >Call For Papers</a>
+      </div>
     </div>
-    </div>
+
     <div class="overlay"></div>
   </div>
 </div>
@@ -63,25 +81,29 @@
 <div class="sections">
   <div class="container">
     <div class="row event">
-      <div class="col-7">
+      <div class="col-12 col-md-7">
         <h2>El Evento</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+          PyDay Tenerife 2018 es un evento tecnológico organizado por un grupo de desarrolladores de Python de Canarias que se
+          han unido y formado una Asociación que tiene como principal objetivo extender y ayudar a la utilización del lenguaje
+          "Python" en diferentes ámbitos, tanto profesionalmente como para proyectos personales.
         </p>
         <p>
-          Organiza:
+          Muy pronto se anunciará el lugar, las charlas y los patrocinadores del evento. Mientras tanto, ¡anímate a dar
+          una charla en PyDay TF 2018! Rellena <a href="//pyday.pythoncanarias.es/cfp" target="_blank">este formulario</a>
+          y nos pondremos en contacto contigo para los detalles.
+        </p>
+        <p>
+
           <img class="logo_text" src="images/logo_text.png"/>
         </p>
       </div>
-      <div class="col-5">
-        <img src="http://via.placeholder.com/450x600" class=""/>
+      <div class="col-12 col-md-5">
+        <img src="images/image_1.jpg" class="img-fluid"/>
       </div>
     </div>
   </div>
-
+<!--
   <div class="container">
     <div class="row">
       <h2>Ponentes</h2>
@@ -205,7 +227,7 @@
         <p>  <strong>Dirección:</strong> Calle Padre Herrera, s/n, 38200 San Cristóbal de La Laguna</p>
         <p><strong>Guagua:</strong> Intercambiador Padre Anchieta.</p>
         <p><strong>Tranvía:</strong> Parada Intercambiador Padre Anchieta</p>
-        
+
       </div>
     </div>
   </div>
@@ -214,6 +236,14 @@
     <div class="row">
       <h2>Tickets</h2>
     </div>
+  </div> -->
+
+  <div class="footer">
+    <div class="container">
+    <div class="col-12 copyright">
+      Python Canarias 2018
+    </div>
+    </div>
   </div>
 </div>
 
@@ -221,7 +251,18 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-
-
+<!--<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $('.carousel').slick({
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        accessibility: false,
+        autoplaySpeed: 4000,
+        speed: 600,
+        fade: true,
+        cssEase: 'linear'
+    });
+</script>-->
 </body>
 </html>

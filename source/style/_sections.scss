@@ -1,4 +1,7 @@
 .sections {
+  @include media(mobile) {
+    margin-top: 5px;
+  }
   margin-top: 80px;
   position: absolute;
   top: 100%;
@@ -40,10 +43,15 @@
 
 .event {
   .logo_text {
-    display: block;
+
     margin: 0 auto;
     margin-top: 35px;
     max-height: 100px;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
   }
 }
 
