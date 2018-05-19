@@ -11,4 +11,9 @@
   margin-top: 60px;
   background-color: $footer;
   color: $text-secondary;
+  text-align: center;
+
+  a {
+    color: $text-primary;
+  }
 }
