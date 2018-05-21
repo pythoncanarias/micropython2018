@@ -2,147 +2,189 @@
   @include media(mobile) {
     margin-top: 5px;
   }
-  margin-top: 80px;
+
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
 
-  .container {
-    margin-top: 30px;
-  }
-
-  h2 {
-    font-weight: bold;
-    font-size: 40px;
-    color: $primary;
-    position: relative;
-    margin-bottom: 40px;
-
-    &:after {
-      transform: rotateZ(90deg);
-      height: 4px;
-      width: 60px;
-      position: absolute;
-      margin-bottom: 2px;
-      background-color: $secondary;
-      left: -35px;
-      bottom: 18px;
-      content: " ";
-    }
-  }
-
   p {
     color: $text-secondary;
-    font-size: 20px;
-
+    font-size: 1.07rem;
     line-height: 1.6;
   }
 
   li {
     color: $text-secondary;
   }
-}
 
+  .section {
+    @include media(mobile) {
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+    }
+    padding-top: 3.7rem;
+    padding-bottom: 3.7rem;
 
-.event {
-  .logo_text {
+    h2 {
+      @include media(mobile) {
+        font-size: 1.9rem;
+      }
+      font-size: 2.2rem;
+      font-weight: bold;
+      color: $primary;
+      padding: 5px 0 5px 15px;
+      border-left: 4px solid $secondary;
+      margin-bottom: 2rem;
 
-    margin: 0 auto;
-    margin-top: 35px;
-    max-height: 100px;
+      &:not(:first-child) {
+        margin-top: 2.8rem;
+      }
+    }
+
+    &.gray {
+      background-color: $gray-bg;
+    }
+
+    &.dark {
+      background-color: $primary;
+
+      h2 {
+        color: $text-primary;
+      }
+
+      p, li {
+        color: #d5d8dc;
+      }
+
+    }
   }
 
-  img {
-    display: block;
-    margin: 0 auto;
-  }
-}
+  .event {
+    @include media(mobile) {
+      padding-top: 2.7rem;
+      padding-bottom: 2.7rem;
+    }
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
 
-.speakers {
-  margin-bottom: 25px;
-  .speaker {
-    text-align: center;
-    margin-bottom: 35px;
-    .photo {
-      height: 120px;
-      width: 120px;
-      border-radius: 50%;
+    h2 {
+      margin-bottom: 1.25rem;
+    }
+
+    .logo_text {
+      margin: 0 auto;
+      margin-top: 35px;
+      max-height: 100px;
+    }
+
+    img {
       display: block;
       margin: 0 auto;
-      margin-bottom: 10px;
-    }
-    .name {
-      color: $primary;
-
-      font-size: 20px;
-    }
-    .position {
-      color: $secondary;
-      font-weight: bold;
     }
   }
-}
 
-.schedule {
-  background-color: $primary;
-  padding-top: 20px;
-  padding-bottom: 25px;
-  h2 {
-    color: $text-primary;
-    margin-bottom: 20px;
+  .speakers {
+    .speaker {
+      text-align: center;
+      .photo {
+        width: 120px;
+        max-width: 100%;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+      }
+      .name {
+        color: $primary;
+
+        font-size: 20px;
+      }
+      .position {
+        color: $secondary;
+        font-weight: bold;
+      }
+    }
   }
 
-  .track {
-    color: $text-primary;
-    font-size: 16px;
+  .schedule {
+    .track {
+      color: $text-primary;
 
-    .title {
-      font-size: 22px;
-      margin-bottom: 25px;
-      border-bottom: 1px solid $text-primary;
-      padding-bottom: 5px;
-    }
-    .talks {
-      .talk {
-        margin-bottom: 20px;
-        .talk-title {
-          font-size: 18px;
-          font-weight: 500;
+      .title {
+        @include media(mobile) {
+          margin-bottom: 0;
         }
-        .talk-speaker {
-          margin-top: -6px;
-          font-size: 15px;
+
+        margin-bottom: 0.7rem;
+        text-align: center;
+        font-size: 1.3rem;
+        background-color: #323949;
+        padding: 0.6rem;
+      }
+
+      .talks {
+        display: flex;
+        justify-content: space-between;
+        @include media(mobile) {
+          flex-direction: column;
         }
-        .talk-time {
-          margin-top: -4px;
-          color: $secondary;
+
+        .talk {
+          @include media(mobile) {
+            width: 100%;
+            margin-bottom: 1px;
+          }
+          width: 32%;
+          padding: 0.6rem;
+          background-color: #3c4557;
+          text-align: center;
+          .talk-title {
+            font-size: 18px;
+            font-weight: 500;
+          }
+          .talk-speaker {
+            margin-top: -6px;
+            font-size: 15px;
+          }
+          .talk-time {
+            margin-top: -4px;
+            color: $secondary;
+          }
         }
       }
     }
   }
-}
 
-.sponsors {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  a {
-    width: 20rem;
-    margin-left: 2rem;
-
-    img {
-      max-width: 100%;
+  .location {
+    .map-container {
+      iframe {
+        width: 100%;
+      }
+    }
+    .indications {
+      @media (max-width: $desktop) {
+        margin-top: 1.5rem;
+      }
     }
   }
-}
 
-.location {
-  .map {}
-  .indications {
-    margin-top: 80px;
+  .tickets {}
+
+  .sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    a {
+      width: 20rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+
+      img {
+        max-width: 100%;
+      }
+    }
   }
-}
 
-.tickets {}
+}
