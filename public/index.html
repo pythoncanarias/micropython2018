@@ -27,7 +27,7 @@
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="MicroPython 2018 - Python Canarias">
 	<meta property="og:url" content="https://micropython.pythoncanarias.es/">
-	<meta property="og:image" content="images//og-image.jpg">
+	<meta property="og:image" content="images/og-image.jpg">
 	<meta property="og:image:width" content="400">
 	<meta property="og:image:height" content="600">
 	<meta property="og:description" content="&lt;p&gt;Presentamos la segunda edici&oacute;n del taller de MicroPython 2018 (#uPythonTF). Tras el &eacute;xito de la primera edici&oacute;n, volvemos a la carga con esta segunda edici&oacute;n por petici&oacute;n popular. Si te gusta Python y te gusta el cacharreo, &iexcl;&iexcl;&eacute;ste es tu curso!!&lt;/p&gt;
@@ -87,60 +87,82 @@
 						<p>
 							MicroPython es un pequeño pero eficiente intérprete del lenguaje de programación <b>Python</b> que incluye un subconjunto mínimo de librerías y que además está optimizado para que pueda correr en microcontroladores y ambientes restringidos.
 						</p>
-						<p>
-							<img class="logo_text" alt="NodeMcu" src="images/NodeMcu.jpg" />
-						</p>
+						<div class="text-center">
+							<picture>
+								<source srcset="images/NodeMcu.webp" type="image/webp">
+								<img class="text-center logo_text img-fluid img-thumbnail" alt="NodeMcu" src="images/NodeMcu.jpg" />
+							</picture>
+						</div>
 					</div>
 					<div class="col-12 col-md-5">
-						<img src="images/imageupython.jpg" alt="Participación en ediciones anteriores" class="img-fluid" />
+						<div class="text-center">
+							<picture>
+								<source srcset="images/imageupython.webp" type="image/webp">
+								<img class="text-center img-fluid" alt="Participación en ediciones anteriores" src="images/imageupython.jpg" />
+							</picture>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
 		<div class="section gray speakers">
 			<div class="container">
 				<h2>¿Quienes van a impartir el curso?</h2>
 				<div class="row justify-content-center">
 					<div class="col-6 col-md-4 col-lg-3 speaker">
-						<img src="images/enen.jpg" alt="Lucas Grillo" class="photo" />
+						<picture>
+							<source srcset="images/enen.webp" type="image/webp">
+							<img alt="Lucas Grillo" class="photo img-fluid img-thumbnail" src="images/enen.jpg" />
+						</picture>
+						<!-- <img src="images/enen.jpg" alt="Lucas Grillo" class="photo" /> -->
 						<div class="name">Lucas Grillo</div>
-						<div class="position"><a href="https://twitter.com/enen">@enen</a></div>
+						<div class="position"><i class="fab fa-twitter "></i> <a href="https://twitter.com/enen">@enen</a></div>
 					</div>
 					<div class="col-6 col-md-4 col-lg-3 speaker">
-						<img src="images/zerasul.jpg" alt="Victor Suárez" class="photo" />
+						<picture>
+							<source srcset="images/zerasul.webp" type="image/webp">
+							<img alt="Victor Suárez" class="photo img-fluid img-thumbnail" src="images/zerasul.jpg" />
+						</picture>
+						<!-- <img src="images/zerasul.jpg" alt="Victor Suárez" class="photo" /> -->
 						<div class="name">Víctor Suárez</div>
-						<div class="position"><a href="https://twitter.com/zerasul">@zerasul</a></div>
+						<div class="position"><i class="fab fa-twitter "></i> <a href="https://twitter.com/zerasul">@zerasul</a></div>
 					</div>
 				</div>
 			</div>
 		</div>
-
 		<div id="schedule" class="section dark schedule">
 			<div class="container">
 				<h2>Programa</h2>
 				<div class="row justify-content-center">
 					<div class="col-lg-8 track">
-						<div class="title">Sábado 9 de Junio 2018</div>
+						<div class="title"><time datetime="2018-06-9 9:30">Sábado 9 de Junio 2018</time></div>
 						<div class="talks">
 							<div class="talk">
 								<div class="talk-title">Primera Sesión</div>
-								<div class="talk-time">09:30 - 11:30</div>
+								<div class="talk-time">
+									<time datetime="09:30">09:30</time> -
+									<time datetime="11:30">11:30</time>
+								</div>
 							</div>
 							<div class="talk">
 								<div class="talk-title">Coffe-break</div>
-								<div class="talk-time">11:30 - 12:00</div>
+								<div class="talk-time">
+									<time datetime="11:30">11:30</time> -
+									<time datetime="12:00">12:00</time>
+								</div>
 							</div>
 							<div class="talk">
 								<div class="talk-title">Segunda Sesión</div>
-								<div class="talk-time">12:00 - 14:00</div>
+								<div class="talk-time">
+									<time datetime="12:00">12:00</time> -
+									<time datetime="14:00">14:00</time>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
 		<div id="location" class="section location">
 			<div class="container">
 				<h2>¿Cómo llegar?</h2>
@@ -148,6 +170,7 @@
 					<div class="col-lg-6 map-container">
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56115.33050432446!2d-16.285775539158383!3d28.47327724532111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41ca4be7a8e87d%3A0x71e840a6b2d48ca!2sinTech!5e0!3m2!1ses!2ses!4v1526490670752" width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
+					<!--
 					<div class="col-lg-6 indications">
 						<h4><a href="http://www.intechtenerife.es/tf-coworkin/"><i class="fa fa-link"></i> intech TF CoworkIN</a></h4>
 						<p>
@@ -165,14 +188,39 @@
 							<br> Si pagas con bono 0.75€, si pagas en efectivo 1.25€
 						</p>
 					</div>
+					-->
+					<div class="col-lg-6 indications">
+						<div class="text-left">
+							<i class="fa fa-location-arrow "></i> <strong>Dirección:</strong>
+							<address class="vcard">
+							<div class="adr">
+								<div class="street-address">Calle vía interior Cueva Bermeja, 24,</div>
+								<span class="postal-code">38180</span>,
+								<span class="locality">Dársena Pesquera</span><br />
+								<span class="region">Santa Cruz de Tenerife - Tenerife</span>
+							</div>
+							<div class="fn org"><a href="http://www.intechtenerife.es/tf-coworkin/" target="_blank"><i class="fa fa-link "></i> TF CoworkIN</a></div>
+						</address>
+						</div>
+						<div class="text-left">
+							<dl>
+								<dt><i class="fa fa-bus "></i> Transporte:</dt>
+								<dd>Líneas <a href="http://titsa.com/index.php/tus-guaguas/lineas-y-horarios/linea-910" target="_blank">910</a> y <a href="http://titsa.com/index.php/tus-guaguas/lineas-y-horarios/linea-945" target="_blank">945</a> de TITSA desde el intercambiador de Santa Cruz</dd>
+								<dd>La parada es "<span class="font-italic">Instituto Oceanográfico</span>"</dd>
+								<dd>Si pagas con bono 0.75€, si pagas en efectivo 1.25€</dd>
+							</dl>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-
 		<div id="tickets" class="section dark tickets">
 			<div class="container">
 				<h2>¿Cómo inscribirse en el curso?</h2>
-				<p>Proximamente habilitaremos el enlace para comprar los kits e inscribirse en el curso. El <b>kit</b> se compone de:
+				<div class="alert alert-info">
+					<div><strong>¡IMPORTANTE!</strong> Proximamente habilitaremos el enlace para comprar los kits e inscribirse en el curso.</div>
+				</div>
+				<p>El <mark>kit</mark> se compone de:
 					<ul>
 						<li>Módulo inalámbrico NodeMcu 4 M bytes Lua WIFI</li>
 						<li>LED super brillante núcleo grande Verde (x5)</li>
@@ -189,21 +237,28 @@
 				</p>
 			</div>
 		</div>
-
 		<div class="section">
 			<div class="container">
 				<h2>Organiza</h2>
 				<div class="sponsors">
-					<a href="http://pythoncanarias.es"><img alt="Python Canarias" src="images/logo_text.png" /></a>
+					<a href="http://pythoncanarias.es">
+						<picture>
+							<source srcset="images/logo_text.webp" type="image/webp">
+							<img alt="Python Canarias" class="photo img-fluid img-thumbnail" src="images/logo_text.png" />
+						</picture>
+					</a>
 				</div>
-
 				<h2>Colabora</h2>
 				<div class="sponsors">
-					<a href="http://k-electronica.es/"><img alt="K-Electrónica" src="images/k-electronica.svg" /></a>
+					<a href="http://k-electronica.es/">
+						<picture>
+							<source srcset="images/k-electronica.webp" type="image/webp">
+							<img alt="K-Electrónica" class="photo img-fluid img-thumbnail" src="images/k-electronica.svg" />
+						</picture>
+					</a>
 				</div>
 			</div>
 		</div>
-
 		<div class="footer">
 			<div class="container">
 				<div class="copyright">
@@ -212,7 +267,6 @@
 			</div>
 		</div>
 	</div>
-
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
 	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
@@ -222,7 +276,16 @@
 	<noscript id="deferred-styles">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</noscript>
+	<noscript>
+		<p>Si has decidido no usar Javascript, nos parece muy bien :-)</p>
+		<p>El contenido principal continuará siendo accesible, pero las posibles partes interactivas, podrían fallar.</p>
+		<p>Si no puedes interactuar con esta página, ponte en contacto con nosotros e intentaremos buscarte una alternativa para que puedas interactuar con nosotros.</p>
+		<p>Disculpa las posibles molestias.</p>
+		<br />
+		<p>Python Canarias</p>
+	</noscript>
 	<script defer>
+		"use strict";
 		var loadDeferredStyles = function() {
 			var addStylesNode = document.getElementById("deferred-styles");
 			var replacement = document.createElement("div");
@@ -236,6 +299,7 @@
 			window.setTimeout(loadDeferredStyles, 0);
 		});
 		else window.addEventListener('load', loadDeferredStyles);
+
 	</script>
 	<!--
 	<script>
